@@ -4,6 +4,47 @@
   
     
     <entry>
+      <title>RK3399 Android7.1.2上实现双WiFi功能</title>
+      <link href="/2019/07/03/double_wifi_on_rk3399_android7/"/>
+      <url>/2019/07/03/double_wifi_on_rk3399_android7/</url>
+      
+        <content type="html"><![CDATA[<p>在RK3399 Android7.1.2上实现双WiFi模组同时工作，其中一个工作在Station(STA)模式，另一个工作在SoftAP/AP模式，两种模式同时工作，并且连接到AP的设备会通过STA来访问外网，解决了手机、平板等移动设备连接上WiFi热点后无法上网的问题。</p><h2 id="设计实现与合作"><a href="#设计实现与合作" class="headerlink" title="设计实现与合作"></a>设计实现与合作</h2><h3 id="设计实现"><a href="#设计实现" class="headerlink" title="设计实现"></a>设计实现</h3><p>在RK3399 Android7.1.2上实现双WiFi模组同时工作功能，实现Android标准API来操作STA和AP，通过对市面客户订制方式的整理，设计了相应的软件配置接口，方便客户直接移植到自有平台上。<br>（目前验证通过的模组组合为AP6356S+RTL8822BU，可快速按客户需求移植底层驱动完成功能移植，frameworks部分已实现全兼容）</p><pre><code>设计上的考量：1.按Android标准的STA和AP标准API接口来修改封装frameworks实现，减少客户设置界面订制工作量；2.通过Property配置，可自行修改切换双WiFi架构和Android原生WiFi架构；3.通过Property配置，可自行配置双WiFi功能作为AP模式的WiFi模组驱动设备结点名称（如wlan0､ ap0等）；4.通过Property配置，可自行配置AP模式分配的IP地址段（避免STA连接Android手机热点时出现地址段冲突问题）。</code></pre><h3 id="技术合作"><a href="#技术合作" class="headerlink" title="技术合作"></a>技术合作</h3><p>我们为客户提供本方案技术的全部源码以及新WiFi模组组合功能的移植。</p><pre><code>合作方式：1.按客户需求移植新WiFi模组组合驱动，以实现在RK3399 Android上的双WiFi功能实现；2.按客户需求移植到各版本的Android系统上，如客户有需求，可以在嵌入式Linux系统上实现该功能；3.提供技术咨询服务以及各种能提供的技术授权服务。</code></pre><h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><pre><code>E-mail:    guochongxin@qq.comWeChat:    guochongxinQQ:        417651175Website:   http://hoomee.tech</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 瑞芯微 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 瑞芯微 </tag>
+            
+            <tag> Rockchip </tag>
+            
+            <tag> Android </tag>
+            
+            <tag> SoftAP </tag>
+            
+            <tag> 双WiFi </tag>
+            
+            <tag> Station </tag>
+            
+            <tag> STA </tag>
+            
+            <tag> AP </tag>
+            
+            <tag> WiFi热点 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Rockchip瑞芯微方案定制服务</title>
       <link href="/2019/07/02/rockchip_bu/"/>
       <url>/2019/07/02/rockchip_bu/</url>
