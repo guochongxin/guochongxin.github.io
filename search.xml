@@ -4,6 +4,49 @@
   
     
     <entry>
+      <title>RK3399 Android7.1.2上实现以太网共享WiFi网络</title>
+      <link href="/2019/07/04/ethernet_tether_on_rk3399_android7/"/>
+      <url>/2019/07/04/ethernet_tether_on_rk3399_android7/</url>
+      
+        <content type="html"><![CDATA[<p>在RK3399 Android7.1.2 BOX配置上实现有线网络（以太网）共享WiFi（STA）网络功能，即有线网口下面可以连接到电脑等通过有线网络连接上网的设备，电脑通过RK3399的有线网口共享其WiFi网络来实现网络共享访问功能，实现类似无线路由器桥接为有线网络功能。</p><h2 id="设计实现与合作"><a href="#设计实现与合作" class="headerlink" title="设计实现与合作"></a>设计实现与合作</h2><h3 id="设计实现"><a href="#设计实现" class="headerlink" title="设计实现"></a>设计实现</h3><p>在RK3399 Android7.1.2 BOX配置软件原有WiFi热点（AP）共享以太网功能的基础上实现以太网共享WiFi（STA）网络功能，实现两种功能模式自由切换操作，在设置界面有相应新增的按钮进行启停操作。</p><pre><code>设计上的考量：1.在BOX配置软件原有WiFi热点（AP）共享以太网功能的基础上，实现以太网共享WiFi（STA）网络功能；2.在设置界面新增相应功能的开关按钮操作项，方便用户启停该功能；3.启用本功能后，以太网口下可挂接交换机或者路由器等网络设备，扩展下一级网络设备接入。</code></pre><h3 id="技术合作"><a href="#技术合作" class="headerlink" title="技术合作"></a>技术合作</h3><p>我们为客户提供本方案技术的全部源码以及相应技术支持。</p><pre><code>合作方式：1.接供相应的PATCH给客户，协助客户集成验证本功能；2.提供技术咨询服务以及各种能提供的技术授权服务。</code></pre><h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><pre><code>E-mail:    guochongxin@qq.comWeChat:    guochongxinQQ:        417651175Website:   http://hoomee.tech</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 瑞芯微 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 瑞芯微 </tag>
+            
+            <tag> Rockchip </tag>
+            
+            <tag> Android </tag>
+            
+            <tag> Station </tag>
+            
+            <tag> STA </tag>
+            
+            <tag> Ethernet </tag>
+            
+            <tag> 以太网 </tag>
+            
+            <tag> 有线网络 </tag>
+            
+            <tag> Tether </tag>
+            
+            <tag> 网络共享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>RK3399 Android7.1.2上实现双WiFi功能</title>
       <link href="/2019/07/03/double_wifi_on_rk3399_android7/"/>
       <url>/2019/07/03/double_wifi_on_rk3399_android7/</url>
@@ -26,17 +69,17 @@
             
             <tag> Android </tag>
             
-            <tag> SoftAP </tag>
-            
-            <tag> 双WiFi </tag>
-            
             <tag> Station </tag>
             
             <tag> STA </tag>
             
+            <tag> SoftAP </tag>
+            
             <tag> AP </tag>
             
             <tag> WiFi热点 </tag>
+            
+            <tag> 双WiFi </tag>
             
         </tags>
       

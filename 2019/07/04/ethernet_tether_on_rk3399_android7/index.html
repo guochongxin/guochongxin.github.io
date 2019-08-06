@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="RK3399 Android7.1.2上实现双WiFi功能, HOOMEE">
-    <meta name="description" content="在RK3399 Android7.1.2上实现双WiFi模组同时工作，其中一个工作在Station(STA)模式，另一个工作在SoftAP/AP模式，两种模式同时工作，并且连接到AP的设备会通过STA来访问外网，解决了手机、平板等移动设备连">
+    <meta name="keywords" content="RK3399 Android7.1.2上实现以太网共享WiFi网络, HOOMEE">
+    <meta name="description" content="在RK3399 Android7.1.2 BOX配置上实现有线网络（以太网）共享WiFi（STA）网络功能，即有线网口下面可以连接到电脑等通过有线网络连接上网的设备，电脑通过RK3399的有线网口共享其WiFi网络来实现网络共享访问功能，实">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>RK3399 Android7.1.2上实现双WiFi功能 | HOOMEE</title>
+    <title>RK3399 Android7.1.2上实现以太网共享WiFi网络 | HOOMEE</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -197,13 +197,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        RK3399 Android7.1.2上实现双WiFi功能
+                        RK3399 Android7.1.2上实现以太网共享WiFi网络
                     </div>
                 </div>
             </div>
@@ -334,20 +334,24 @@
                                 <span class="chip bg-color">STA</span>
                             </a>
                         
-                            <a href="/tags/SoftAP/" target="_blank">
-                                <span class="chip bg-color">SoftAP</span>
+                            <a href="/tags/Ethernet/" target="_blank">
+                                <span class="chip bg-color">Ethernet</span>
                             </a>
                         
-                            <a href="/tags/AP/" target="_blank">
-                                <span class="chip bg-color">AP</span>
+                            <a href="/tags/以太网/" target="_blank">
+                                <span class="chip bg-color">以太网</span>
                             </a>
                         
-                            <a href="/tags/WiFi热点/" target="_blank">
-                                <span class="chip bg-color">WiFi热点</span>
+                            <a href="/tags/有线网络/" target="_blank">
+                                <span class="chip bg-color">有线网络</span>
                             </a>
                         
-                            <a href="/tags/双WiFi/" target="_blank">
-                                <span class="chip bg-color">双WiFi</span>
+                            <a href="/tags/Tether/" target="_blank">
+                                <span class="chip bg-color">Tether</span>
+                            </a>
+                        
+                            <a href="/tags/网络共享/" target="_blank">
+                                <span class="chip bg-color">网络共享</span>
                             </a>
                         
                     </div>
@@ -370,7 +374,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-07-03
+                    2019-07-04
                 </div>
 
                 
@@ -386,17 +390,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>在RK3399 Android7.1.2上实现双WiFi模组同时工作，其中一个工作在Station(STA)模式，另一个工作在SoftAP/AP模式，两种模式同时工作，并且连接到AP的设备会通过STA来访问外网，解决了手机、平板等移动设备连接上WiFi热点后无法上网的问题。</p>
-<h2 id="设计实现与合作"><a href="#设计实现与合作" class="headerlink" title="设计实现与合作"></a>设计实现与合作</h2><h3 id="设计实现"><a href="#设计实现" class="headerlink" title="设计实现"></a>设计实现</h3><p>在RK3399 Android7.1.2上实现双WiFi模组同时工作功能，实现Android标准API来操作STA和AP，通过对市面客户订制方式的整理，设计了相应的软件配置接口，方便客户直接移植到自有平台上。<br>（目前验证通过的模组组合为AP6356S+RTL8822BU，可快速按客户需求移植底层驱动完成功能移植，frameworks部分已实现全兼容）</p>
+                <p>在RK3399 Android7.1.2 BOX配置上实现有线网络（以太网）共享WiFi（STA）网络功能，即有线网口下面可以连接到电脑等通过有线网络连接上网的设备，电脑通过RK3399的有线网口共享其WiFi网络来实现网络共享访问功能，实现类似无线路由器桥接为有线网络功能。</p>
+<h2 id="设计实现与合作"><a href="#设计实现与合作" class="headerlink" title="设计实现与合作"></a>设计实现与合作</h2><h3 id="设计实现"><a href="#设计实现" class="headerlink" title="设计实现"></a>设计实现</h3><p>在RK3399 Android7.1.2 BOX配置软件原有WiFi热点（AP）共享以太网功能的基础上实现以太网共享WiFi（STA）网络功能，实现两种功能模式自由切换操作，在设置界面有相应新增的按钮进行启停操作。</p>
 <pre><code>设计上的考量：
-1.按Android标准的STA和AP标准API接口来修改封装frameworks实现，减少客户设置界面订制工作量；
-2.通过Property配置，可自行修改切换双WiFi架构和Android原生WiFi架构；
-3.通过Property配置，可自行配置双WiFi功能作为AP模式的WiFi模组驱动设备结点名称（如wlan0､ ap0等）；
-4.通过Property配置，可自行配置AP模式分配的IP地址段（避免STA连接Android手机热点时出现地址段冲突问题）。</code></pre><h3 id="技术合作"><a href="#技术合作" class="headerlink" title="技术合作"></a>技术合作</h3><p>我们为客户提供本方案技术的全部源码以及新WiFi模组组合功能的移植。</p>
+1.在BOX配置软件原有WiFi热点（AP）共享以太网功能的基础上，实现以太网共享WiFi（STA）网络功能；
+2.在设置界面新增相应功能的开关按钮操作项，方便用户启停该功能；
+3.启用本功能后，以太网口下可挂接交换机或者路由器等网络设备，扩展下一级网络设备接入。</code></pre><h3 id="技术合作"><a href="#技术合作" class="headerlink" title="技术合作"></a>技术合作</h3><p>我们为客户提供本方案技术的全部源码以及相应技术支持。</p>
 <pre><code>合作方式：
-1.按客户需求移植新WiFi模组组合驱动，以实现在RK3399 Android上的双WiFi功能实现；
-2.按客户需求移植到各版本的Android系统上，如客户有需求，可以在嵌入式Linux系统上实现该功能；
-3.提供技术咨询服务以及各种能提供的技术授权服务。</code></pre><h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><pre><code>E-mail:    guochongxin@qq.com
+1.接供相应的PATCH给客户，协助客户集成验证本功能；
+2.提供技术咨询服务以及各种能提供的技术授权服务。</code></pre><h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><pre><code>E-mail:    guochongxin@qq.com
 WeChat:    guochongxin
 QQ:        417651175
 Website:   http://hoomee.tech</code></pre>
@@ -560,9 +562,10 @@ Website:   http://hoomee.tech</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/07/04/ethernet_tether_on_rk3399_android7/">
                     <div class="card-image">
@@ -580,9 +583,9 @@ Website:   http://hoomee.tech</code></pre>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -595,6 +598,7 @@ Website:   http://hoomee.tech</code></pre>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -649,24 +653,24 @@ Website:   http://hoomee.tech</code></pre>
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/02/rockchip_bu/">
+                <a href="/2019/07/03/double_wifi_on_rk3399_android7/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Rockchip瑞芯微方案定制服务">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="RK3399 Android7.1.2上实现双WiFi功能">
                         
-                        <span class="card-title">Rockchip瑞芯微方案定制服务</span>
+                        <span class="card-title">RK3399 Android7.1.2上实现双WiFi功能</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Rockchip瑞芯微方案定制，包含硬件和软件，支持Android和Linux。
+                            Rockchip瑞芯微RK3399 Android7.1.2上实现双模组双WiFi(STA+AP)功能。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-02
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-03
                             </span>
                         <span class="publish-author">
                             
@@ -695,8 +699,28 @@ Website:   http://hoomee.tech</code></pre>
                         <span class="chip bg-color">Android</span>
                     </a>
                     
-                    <a href="/tags/Linux/" target="_blank">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/Station/" target="_blank">
+                        <span class="chip bg-color">Station</span>
+                    </a>
+                    
+                    <a href="/tags/STA/" target="_blank">
+                        <span class="chip bg-color">STA</span>
+                    </a>
+                    
+                    <a href="/tags/SoftAP/" target="_blank">
+                        <span class="chip bg-color">SoftAP</span>
+                    </a>
+                    
+                    <a href="/tags/AP/" target="_blank">
+                        <span class="chip bg-color">AP</span>
+                    </a>
+                    
+                    <a href="/tags/WiFi热点/" target="_blank">
+                        <span class="chip bg-color">WiFi热点</span>
+                    </a>
+                    
+                    <a href="/tags/双WiFi/" target="_blank">
+                        <span class="chip bg-color">双WiFi</span>
                     </a>
                     
                 </div>
