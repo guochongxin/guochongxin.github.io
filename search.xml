@@ -26,11 +26,41 @@
             
             <tag> Android </tag>
             
+            <tag> Presentation </tag>
+            
             <tag> 双屏异显 </tag>
             
             <tag> 双触控 </tag>
             
             <tag> 双屏异显双触控 </tag>
+            
+            <tag> LVDS </tag>
+            
+            <tag> MIPI </tag>
+            
+            <tag> DSI </tag>
+            
+            <tag> eDP </tag>
+            
+            <tag> HDMI </tag>
+            
+            <tag> VGA </tag>
+            
+            <tag> I2C </tag>
+            
+            <tag> UART </tag>
+            
+            <tag> USB </tag>
+            
+            <tag> LCD </tag>
+            
+            <tag> TouchScreen </tag>
+            
+            <tag> TouchPanel </tag>
+            
+            <tag> TP </tag>
+            
+            <tag> DisplayScreen </tag>
             
         </tags>
       
