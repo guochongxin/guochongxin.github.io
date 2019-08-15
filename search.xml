@@ -5,8 +5,8 @@
     
     <entry>
       <title>RK方案Android系统实现双屏异显双触控</title>
-      <link href="/2019/07/05/double_screen_double_touch_on_rk3288_android5/"/>
-      <url>/2019/07/05/double_screen_double_touch_on_rk3288_android5/</url>
+      <link href="/2019/07/05/double_screen_double_touch_on_rk_android/"/>
+      <url>/2019/07/05/double_screen_double_touch_on_rk_android/</url>
       
         <content type="html"><![CDATA[<p>在Rockchip瑞芯微RK方案Android系统上实现双屏异显双触控功能，目前在RK3288 Android5.1和RK3399 Android7.1/Android8.1测试通过。</p><h2 id="设计实现与合作"><a href="#设计实现与合作" class="headerlink" title="设计实现与合作"></a>设计实现与合作</h2><h3 id="设计实现"><a href="#设计实现" class="headerlink" title="设计实现"></a>设计实现</h3><p>在Rockchip瑞芯微RK方案Android系统上实现双屏异显双触控功能，不采用RK自行实现的双屏异显机制（运行两个APK在两个屏上），而采用Android原生的Presentation接口实现双屏异显APP部分开发，而Presentation掊口依赖于Android系统的显示框架，我们将两路显示配置为Primary和Extend来对应主副显，从而让两个触控屏通过系统配置与之对应起来，实现双屏异显双触控功能。</p><pre><code>设计上的考量：1.按Android标准的Presentation接口实现双屏异显APP开发；2.在Android显示框架上将两个显示设备分别配置为主副显示设备；3.在Android输入框架上将两个触控屏分别配置为内外置输入设备；4.显示设备可采用LVDS、HDMI、MIPI、eDP等信号输出显示，触控设备可采用I2C、USB、UART等接口输入。</code></pre><h3 id="技术合作"><a href="#技术合作" class="headerlink" title="技术合作"></a>技术合作</h3><p>我们为客户提供本方案技术的全部源码以及对应显示屏参数、触控屏驱动等设备调试。</p><pre><code>合作方式：1.按客户需求调试对应的显示屏、触摸屏；2.按客户需求的对应关系配置双屏异显双触控的主副屏对应关系；3.提供技术咨询服务以及各种能提供的技术授权服务。</code></pre><h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><pre><code>E-mail:    guochongxin@qq.comWeChat:    guochongxinQQ:        417651175Website:   http://hoomee.tech</code></pre>]]></content>
       
