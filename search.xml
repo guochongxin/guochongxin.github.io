@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title>Python开发业务</title>
+      <link href="/2019/07/06/python_bu/"/>
+      <url>/2019/07/06/python_bu/</url>
+      
+        <content type="html"><![CDATA[<p>HOOMEE技术服务，提供Python编程相关业务。欢迎有需要的朋友们与我们联系合作！优先开发Linux环境，也按客户需求往Windows和MacOS环境迁移。</p><h2 id="服务范围"><a href="#服务范围" class="headerlink" title="服务范围"></a>服务范围</h2><h3 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h3><p>为朋友们提供Python脚本开发订制业务，基于Linux环境下的各类Python脚本开发，涉及类型有：</p><pre><code>1.各种源码编译脚本（如Android AOSP、Linux Kernel、嵌入式BSP等）；2.各种Ubuntu系统下脚本（定时关机、数据采集分析等）；……</code></pre><h3 id="爬虫"><a href="#爬虫" class="headerlink" title="爬虫"></a>爬虫</h3><p>为朋友们提供Python爬虫开发订制业务，基于Linux环境下的Python爬虫功能开发，涉及类型有：</p><pre><code>基于Scrapy框架的网站爬虫功能开发，并更新到MySQL等数据库中，并进行数据分析。</code></pre><h3 id="AI"><a href="#AI" class="headerlink" title="AI"></a>AI</h3><p>为朋友们提供Python相关AI功能开发订制业务，基于Linux环境下的Python人工智能功能开发，涉及类型有：</p><pre><code>1.Python OpenCV图像识别处理相关技术功能开发；2.Python TensorFlow相关技术功能开发；3.Python ROS机器人相关技术功能开发；……、</code></pre><h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><pre><code>E-mail:    guochongxin@qq.comWeChat:    guochongxinQQ:        417651175Website:   http://hoomee.tech</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 爬虫 </tag>
+            
+            <tag> 脚本 </tag>
+            
+            <tag> AI </tag>
+            
+            <tag> OpenCV </tag>
+            
+            <tag> TensorFlow </tag>
+            
+            <tag> ROS </tag>
+            
+            <tag> Scrapy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>RK方案Android系统实现双屏异显双触控</title>
       <link href="/2019/07/05/double_screen_double_touch_on_rk_android/"/>
       <url>/2019/07/05/double_screen_double_touch_on_rk_android/</url>
